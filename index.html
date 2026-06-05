@@ -108,8 +108,9 @@
   .card .badge{display:inline-block;margin-top:14px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-2);padding:4px 10px;border:1px solid rgba(212,168,75,.3);border-radius:4px}
 
   /* TRADES */
-  .trades{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
-  @media(max-width:900px){.trades{grid-template-columns:1fr}}
+  .trades{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px}
+  @media(max-width:1000px){.trades{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:600px){.trades{grid-template-columns:1fr}}
   .trade{position:relative;background:linear-gradient(180deg,#13204a,#0d1430);border:1px solid var(--line);border-radius:18px;padding:32px;overflow:hidden}
   .trade::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-2))}
   .trade .ico{font-size:36px;margin-bottom:8px}
@@ -118,8 +119,9 @@
   .trade ul li{margin:6px 0}
 
   /* PACKAGES */
-  .pkg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
-  @media(max-width:900px){.pkg-grid{grid-template-columns:1fr}}
+  .pkg-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px}
+  @media(max-width:1100px){.pkg-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:600px){.pkg-grid{grid-template-columns:1fr}}
   .pkg{background:linear-gradient(180deg,var(--panel),#0d1430);border:1px solid var(--line);border-radius:18px;padding:30px;position:relative}
   .pkg.featured{border-color:rgba(212,168,75,.5);box-shadow:0 20px 60px -30px rgba(212,168,75,.5)}
   .pkg .tag{position:absolute;top:-12px;left:30px;background:var(--gold);color:#1a1305;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:5px 12px;border-radius:4px}
@@ -175,9 +177,10 @@
     <nav class="nav-links">
       <a href="#about">About</a>
       <a href="#services">Services</a>
+      <a href="#construction">Construction</a>
       <a href="#trades">Who I Help</a>
       <a href="#pricing">Pricing</a>
-      <a href="#cases">Case Studies</a>
+      <a href="#cases">Cases</a>
       <a href="#faq">FAQ</a>
     </nav>
     <div class="nav-cta">
@@ -191,25 +194,28 @@
 <section class="hero container">
   <div>
     <div class="eyebrow">QBO Advanced ProAdvisor · Knowify Certified Advisor · Procore Certified · Jobber Partner · 🇺🇸 Remote</div>
-    <h1 class="hero-title">Books that make your <span class="italic">trade</span> profitable again.</h1>
+    <h1 class="hero-title">Construction bookkeeping built for the <span class="italic">contractor back office</span>.</h1>
     <p class="lead">
-      I help <b>HVAC, Plumbing & Electrical contractors</b> in <b>Texas & Florida</b>
-      clean up job costing, WIP reporting, and month-end profitability visibility —
-      using <b>QuickBooks Online + Knowify / Procore / Jobber</b>.
+      I help <b>Construction Contractors — HVAC, Plumbing & Electrical</b> across <b>Texas & Florida</b>
+      clean up <b>job costing, WIP reporting, AIA progress billing and retainage tracking</b>
+      — so month-end profit per job is finally clear. Powered by <b>QuickBooks Online + Knowify / Procore / Jobber</b>.
     </p>
     <div class="chips">
+      <span class="chip">Construction</span>
       <span class="chip">HVAC</span>
       <span class="chip">Plumbing</span>
       <span class="chip">Electrical</span>
-      <span class="chip">Job Costing</span>
+      <span class="chip">AIA Billing (G702/G703)</span>
+      <span class="chip">Retainage</span>
       <span class="chip">WIP Reporting</span>
-      <span class="chip">Month-End Close</span>
+      <span class="chip">Job Costing</span>
+      <span class="chip">Back-Office Support</span>
       <span class="chip">🇺🇸 TX & FL</span>
     </div>
     <div class="hero-ctas">
-      <a class="btn btn-gold" href="https://calendly.com/murugeshwaribooks/30min" target="_blank" rel="noopener">📅 Book Free 30-min Call</a>
+      <a class="btn btn-gold" href="https://calendly.com/murugeshwaribooks/30min" target="_blank" rel="noopener">📅 Book Free Intro Call (15 min)</a>
+      <a class="btn btn-ghost" href="https://calendly.com/murugeshwaribooks/30min" target="_blank" rel="noopener">🗓 30-min Deep Dive</a>
       <a class="btn btn-ghost" href="mailto:murugeshwaribooks@gmail.com">✉ Email Me</a>
-      <a class="btn btn-ghost" href="https://go.getjobber.com/murugeshwari" target="_blank" rel="noopener">🛻 Jobber Partner Link</a>
     </div>
   </div>
 
@@ -230,7 +236,7 @@
 
 <div class="container">
   <div class="stats">
-    <div class="stat"><div class="num">3</div><div class="lbl">Specialist Packages</div></div>
+    <div class="stat"><div class="num">4</div><div class="lbl">Specialist Packages</div></div>
     <div class="stat"><div class="num">TX · FL</div><div class="lbl">Primary Service Area</div></div>
     <div class="stat"><div class="num">1 Day</div><div class="lbl">Response Time</div></div>
     <div class="stat"><div class="num">4+</div><div class="lbl">Certifications</div></div>
@@ -281,15 +287,90 @@
       books into clean, decision-ready financials — so you can focus on running crews and closing jobs, not bookkeeping.
     </p>
     <ul class="feature-list">
-      <li><b>Job Costing</b> — labor, materials, subs per job number</li>
-      <li><b>WIP Reporting</b> — overbillings, underbillings, % complete</li>
-      <li><b>Month-End Profitability</b> — job-level P&L every month</li>
-      <li><b>Service Ticket Tracking</b> — know which calls actually made money</li>
-      <li><b>Bank & Credit Card Reconciliations</b> — books that match reality</li>
-      <li><b>Cleanup & Catch-Up</b> — months of backlog reconstructed</li>
-      <li><b>Subcontractor & 1099 Tracking</b> — tax season becomes a non-event</li>
-      <li><b>CPA-Ready Reports</b> — clean handoff at year-end</li>
+      <li><b>Construction Job Costing</b> — labor, materials, subs, equipment per job/phase</li>
+      <li><b>WIP Reporting (CFMA-style)</b> — % complete, overbillings, underbillings, backlog</li>
+      <li><b>AIA Progress Billing (G702/G703)</b> — schedule of values, draws, retention</li>
+      <li><b>Retainage Tracking</b> — receivable AND payable, by job and customer</li>
+      <li><b>Change Order Management</b> — approved, pending, and impact on contract value</li>
+      <li><b>Payroll Job-Cost Allocation</b> — labor split by job/phase (works alongside your payroll provider)</li>
+      <li><b>Lien Waivers & Compliance Docs</b> — conditional/unconditional tracking per draw</li>
+      <li><b>Subcontractor & 1099 Tracking</b> — W-9s, COIs, vendor compliance</li>
+      <li><b>Month-End Job-Level P&L</b> — profitability per job, not just per company</li>
+      <li><b>Bonding & Lender-Ready Reports</b> — clean handoff to surety, banker, CPA</li>
     </ul>
+  </div>
+</section>
+
+<!-- CONSTRUCTION SPECIALTIES -->
+<section id="construction">
+  <div class="container">
+    <div class="kicker">Construction Specialty</div>
+    <h2>Built for the <span class="italic">construction</span> back office.</h2>
+    <p class="section-intro">
+      Construction accounting is not regular bookkeeping. <b>AIA billing, retainage, WIP, lien waivers,
+      certified payroll, change orders</b> — these are not extras, they are the job. Here is exactly
+      what I handle for construction contractors every month.
+    </p>
+
+    <div class="grid-4">
+      <div class="card">
+        <div class="icon">📄</div>
+        <h3>AIA Progress Billing</h3>
+        <p>Schedule of Values, <b>G702 / G703</b> style applications for payment, draw schedules tied to % complete — fully reconciled to QBO income.</p>
+        <span class="badge">G702 · G703</span>
+      </div>
+      <div class="card">
+        <div class="icon">💰</div>
+        <h3>Retainage Tracking</h3>
+        <p>Separate <b>Retainage Receivable</b> and <b>Retainage Payable</b> accounts. Tracked per job, per customer, per sub — released only when contract terms are met.</p>
+        <span class="badge">AR & AP Retention</span>
+      </div>
+      <div class="card">
+        <div class="icon">📊</div>
+        <h3>WIP Schedule (CFMA)</h3>
+        <p>Monthly Work-In-Progress: contract value, costs to date, % complete, billed to date, <b>overbillings & underbillings</b> — exactly what your bonding company and CPA want.</p>
+        <span class="badge">Bonding Ready</span>
+      </div>
+      <div class="card">
+        <div class="icon">📝</div>
+        <h3>Change Orders</h3>
+        <p>Approved, pending and disputed COs tracked against original contract value. No more "I thought we billed for that" surprises at close.</p>
+        <span class="badge">CO Log</span>
+      </div>
+      <div class="card">
+        <div class="icon">🧾</div>
+        <h3>Lien Waivers</h3>
+        <p>Conditional & unconditional waivers tracked per draw and per sub — so payments never go out without the right paperwork in hand.</p>
+        <span class="badge">Compliance</span>
+      </div>
+      <div class="card">
+        <div class="icon">👷</div>
+        <h3>Payroll Job-Cost Allocation</h3>
+        <p>I split <b>labor hours, burden and fringes by job and phase</b> in QBO/Knowify so every job shows real labor cost. Your payroll provider (Gusto, ADP, QBO Payroll) runs and files the actual payroll — including any certified-payroll reports for prevailing-wage work.</p>
+        <span class="badge">Back-Office Support</span>
+      </div>
+      <div class="card">
+        <div class="icon">🤝</div>
+        <h3>Subcontractor Compliance</h3>
+        <p><b>W-9s, COIs, 1099s</b>, vendor onboarding ledger — every sub vetted before a check goes out. 1099 season becomes a non-event.</p>
+        <span class="badge">W-9 · COI · 1099</span>
+      </div>
+      <div class="card">
+        <div class="icon">🏦</div>
+        <h3>Bonding & Lender Reports</h3>
+        <p>WIP, job-level P&L, balance sheet, AR aging by job — packaged the way <b>sureties, banks, and CPAs</b> actually want to see them.</p>
+        <span class="badge">Audit Ready</span>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-top:36px">
+      <b>🎯 Why this matters</b>
+      <p class="muted" style="margin:10px 0 0">
+        Generic bookkeepers record transactions. Construction bookkeepers track <b>contract value, retention,
+        and % complete</b> — so owners know real job profit, not just cash in the bank. That is the difference
+        between a healthy backlog and a failed bonding renewal.
+      </p>
+    </div>
   </div>
 </section>
 
@@ -297,10 +378,10 @@
 <section id="trades">
   <div class="container">
     <div class="kicker">Who I Help</div>
-    <h2>Built for HVAC, Plumbing & Electrical.</h2>
+    <h2>Construction contractors — HVAC, Plumbing & Electrical.</h2>
     <p class="section-intro">
-      Serving <b>Texas & Florida</b> trade contractors — residential service, commercial, new construction,
-      and design-build shops running 2–25 active jobs.
+      Serving <b>Texas & Florida</b> construction & specialty-trade contractors — new construction,
+      commercial, bonded, design-build and residential service shops running 2–25 active jobs.
     </p>
     <div class="trades">
       <div class="trade">
@@ -336,6 +417,17 @@
           <li>Lender / bonding-ready reports</li>
         </ul>
       </div>
+      <div class="trade">
+        <div class="ico">🏗️</div>
+        <h3>General Construction</h3>
+        <p class="muted">GCs, design-build firms and construction subs running multiple bonded jobs.</p>
+        <ul>
+          <li>AIA G702 / G703 progress billing</li>
+          <li>Retainage AR & AP tracking</li>
+          <li>WIP schedule for surety review</li>
+          <li>Lien waivers & sub compliance</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
@@ -359,8 +451,8 @@
 <section id="pricing">
   <div class="container">
     <div class="kicker">Service Packages</div>
-    <h2>Three specialist tracks. <span class="italic">One expert.</span></h2>
-    <p class="section-intro">Each package is scoped to how your shop actually runs — not a generic retainer.</p>
+    <h2>Four specialist tracks. <span class="italic">One expert.</span></h2>
+    <p class="section-intro">Each package is scoped to how your construction shop actually runs — not a generic retainer.</p>
 
     <div class="pkg-grid">
       <div class="pkg">
@@ -408,6 +500,22 @@
           <li>Subcontractor ledger & 1099 prep</li>
           <li>AIA-style progress billing</li>
           <li>Weekly status touchpoint</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://calendly.com/murugeshwaribooks/30min" target="_blank">Book Free Call →</a>
+      </div>
+
+      <div class="pkg">
+        <div class="step">04 · Construction GC</div>
+        <h3>🏗️ Construction Back-Office</h3>
+        <p class="for">Full <b>construction back-office</b> for GCs & specialty subs running multi-job, bonded work.</p>
+        <div class="price">from $1,450<small>/month</small></div>
+        <ul>
+          <li>AIA G702 / G703 progress billing</li>
+          <li>Retainage AR & AP tracking</li>
+          <li>CFMA-style WIP schedule</li>
+          <li>Lien waiver & sub compliance ledger</li>
+          <li>Payroll job-cost allocation</li>
+          <li>Bonding / lender / CPA reporting pack</li>
         </ul>
         <a class="btn btn-ghost" href="https://calendly.com/murugeshwaribooks/30min" target="_blank">Book Free Call →</a>
       </div>
@@ -479,7 +587,11 @@
     <div class="kicker">Common Questions</div>
     <h2>Frequently asked.</h2>
     <div class="faq">
-      <details><summary>Do you only work with HVAC, plumbing & electrical?</summary><p>Those are my specialties. I also work with closely related trades like mechanical, low-voltage, and solar EC's. If your shop runs service tickets + install jobs, I'm a fit.</p></details>
+      <details><summary>Do you only work with HVAC, plumbing & electrical?</summary><p>Those are my specialty trades inside the broader <b>construction</b> umbrella. I also work with mechanical, low-voltage, solar EC's and general construction subs. If your shop runs jobs with contracts, draws and retainage, I'm a fit.</p></details>
+      <details><summary>Do you handle AIA progress billing (G702 / G703)?</summary><p>Yes. I prepare AIA-style Applications for Payment with Schedule of Values, % complete and retention — and reconcile every approved draw back to QBO + Knowify or Procore. Your GC, owner and surety all see the same numbers.</p></details>
+      <details><summary>How do you track retainage?</summary><p>Retainage is booked into dedicated <b>Retainage Receivable</b> and <b>Retainage Payable</b> accounts (never mixed with regular AR/AP). Tracked per job and per sub, released only when contract terms are met — so cash forecasting actually works.</p></details>
+      <details><summary>Can you produce a WIP schedule for my bonding company?</summary><p>Yes — monthly CFMA-style WIP with contract value, costs to date, % complete, billed to date, over/under billings. Delivered in a format your surety underwriter and CPA already know how to read.</p></details>
+      <details><summary>Do you handle certified payroll / prevailing wage jobs?</summary><p>I'm a <b>bookkeeper, not a payroll provider</b>. For Davis-Bacon or state prevailing-wage projects, your payroll provider (Gusto, ADP, QBO Payroll, etc.) runs the actual payroll and files the certified-payroll report. <b>My job is the back-office side</b> — splitting labor hours, burden and fringes by job and phase in QBO/Knowify so your job costs and WIP stay accurate.</p></details>
       <details><summary>Do you work with my CPA?</summary><p>Yes — I send clean, tax-ready books directly to your CPA so you aren't stuck in the middle. Your accountant gets organized financials, and you get a smoother, cheaper tax season.</p></details>
       <details><summary>I'm not in Texas or Florida — can you still help?</summary><p>TX & FL are my primary focus because that's where most of my contractor clients run. I do take a limited number of out-of-state contractors — book a call and we'll see if it's a fit.</p></details>
       <details><summary>What software do you use?</summary><p>QuickBooks Online (Advanced ProAdvisor) as the financial backbone, integrated with Knowify, Procore, or Jobber depending on how your shop runs. I'll recommend the right stack on the discovery call.</p></details>
