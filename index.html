@@ -59,8 +59,11 @@
   .chip{font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:7px 12px;border:1px solid var(--line);border-radius:6px;color:#cbd2ee;background:rgba(255,255,255,.02)}
   .hero-ctas{display:flex;flex-wrap:wrap;gap:12px}
   .hero-card{background:linear-gradient(180deg,var(--panel),#0d1430);border:1px solid var(--line);border-radius:20px;padding:28px;text-align:center}
-  .logo-wrap{margin:0 auto;padding:22px 18px;background:#fff;border-radius:16px;border:1px solid var(--line);box-shadow:0 12px 40px -10px rgba(212,168,75,.25);max-width:320px}
-  .logo-wrap img{display:block;width:100%;height:auto}
+  .logo-wrap{margin:0 auto;padding:22px 20px;background:linear-gradient(135deg,rgba(212,168,75,.18),rgba(110,168,255,.10));border-radius:16px;border:1px solid rgba(212,168,75,.35);box-shadow:0 12px 40px -10px rgba(212,168,75,.25);max-width:340px;display:flex;align-items:center;gap:16px;text-align:left}
+  .logo-mark{width:58px;height:58px;min-width:58px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(180deg,var(--gold-2),var(--gold));color:#161006;font-family:'Cormorant Garamond',serif;font-size:27px;font-weight:700;box-shadow:0 10px 28px -14px rgba(212,168,75,.7)}
+  .logo-copy strong{display:block;font-family:'Cormorant Garamond',serif;font-size:24px;line-height:1;color:#fff;letter-spacing:.01em}
+  .logo-copy strong b{color:var(--gold-2);font-weight:600}
+  .logo-copy span{display:block;margin-top:7px;color:#cbd2ee;font-size:11px;letter-spacing:.13em;text-transform:uppercase;line-height:1.35}
   .contact-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:18px}
   .contact-row a{font-size:12px;color:var(--muted);border:1px solid var(--line);padding:7px 12px;border-radius:6px;display:inline-flex;align-items:center;gap:6px}
   .contact-row a:hover{color:var(--gold-2);border-color:var(--gold-2)}
@@ -220,7 +223,13 @@
   </div>
 
   <aside class="hero-card">
-    <div class="logo-wrap"><img src="murugeshwari-logo.png" alt="Murugeshwari Books — Construction Specialist Bookkeeping"></div>
+    <div class="logo-wrap" aria-label="Murugeshwari Books — Construction specialist bookkeeping">
+      <div class="logo-mark">MB</div>
+      <div class="logo-copy">
+        <strong>Murugeshwari<b>Books</b></strong>
+        <span>Construction Specialist Bookkeeping</span>
+      </div>
+    </div>
     <h3>Murugeshwari S</h3>
     <p>Contractor Bookkeeper · Gesh</p>
     <div class="mini-chips">
