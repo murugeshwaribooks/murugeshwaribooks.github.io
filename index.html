@@ -133,6 +133,7 @@
   .pkg .for{color:var(--muted);font-size:14px;margin-bottom:18px}
   .price{font-family:'Cormorant Garamond',serif;color:var(--gold-2);font-size:36px;margin:8px 0 4px}
   .price small{font-size:14px;color:var(--muted)}
+  .price .amt{filter:blur(8px);-webkit-user-select:none;user-select:none;pointer-events:none}
   .pkg ul{list-style:none;padding:0;margin:18px 0 22px}
   .pkg ul li{padding-left:24px;position:relative;font-size:14px;color:#d6dcf3;margin:8px 0}
   .pkg ul li::before{content:"✓";position:absolute;left:0;color:var(--gold-2)}
@@ -468,7 +469,7 @@
         <div class="step">01 · Service-Heavy</div>
         <h3>🛻 Service Trades</h3>
         <p class="for">For HVAC / plumbing / electrical service shops on <b>Jobber + QBO</b>.</p>
-        <div class="price">from $450<small>/month</small></div>
+        <div class="price">from <span class="amt">$450</span><small>/month</small></div>
         <ul>
           <li>Jobber ↔ QBO reconciliation</li>
           <li>Service ticket P&L</li>
@@ -485,7 +486,7 @@
         <div class="step">02 · Install + Service</div>
         <h3>🔧 Mixed Contractor</h3>
         <p class="for">For shops doing <b>service + install / new construction</b> on Knowify or QBO.</p>
-        <div class="price">from $750<small>/month</small></div>
+        <div class="price">from <span class="amt">$750</span><small>/month</small></div>
         <ul>
           <li>Full job costing (labor, materials, subs)</li>
           <li>WIP schedule (monthly)</li>
@@ -501,7 +502,7 @@
         <div class="step">03 · Commercial</div>
         <h3>🏗️ Commercial / Bonded</h3>
         <p class="for">For commercial trade contractors on <b>Procore + QBO</b> running bonded jobs.</p>
-        <div class="price">from $1,150<small>/month</small></div>
+        <div class="price">from <span class="amt">$1,150</span><small>/month</small></div>
         <ul>
           <li>Procore ↔ QBO budget sync</li>
           <li>Project-level P&L per job</li>
@@ -517,7 +518,7 @@
         <div class="step">04 · Construction GC</div>
         <h3>🏗️ Construction Back-Office</h3>
         <p class="for">Full <b>construction back-office</b> for GCs & specialty subs running multi-job, bonded work.</p>
-        <div class="price">from $1,450<small>/month</small></div>
+        <div class="price">from <span class="amt">$1,450</span><small>/month</small></div>
         <ul>
           <li>AIA G702 / G703 progress billing</li>
           <li>Retainage AR & AP tracking</li>
